@@ -15,27 +15,25 @@ No designer needed. No pixel-pushing. Just copy a seed and build.
 
 <br />
 
-<img src="showcase/toss-dashboard.png" width="320" alt="SaaS dashboard built with StyleSeed Toss seed" />
-
-*This dashboard was generated with Claude Code + Toss seed. Zero designer involvement.*
-
 </div>
 
 ---
 
 ## The 30-Second Pitch
 
-You ask Claude Code to build a dashboard. Without a design system, you get this:
+You ask Claude Code to build a dashboard. Without a design system, you get generic cards, inconsistent spacing, random font sizes. It *works* — but it looks like a hackathon project.
 
-> Generic cards, inconsistent spacing, random font sizes, no visual hierarchy. It *works* — but it looks like a hackathon project.
-
-With a **StyleSeed**, you get this:
+**With a StyleSeed:**
 
 <div align="center">
-  <img src="showcase/toss-full.png" width="320" alt="Full dashboard built with StyleSeed" />
+  <img src="showcase/toss-full.png" width="320" alt="SaaS dashboard built with StyleSeed Toss seed" />
+  <br /><br />
+  <em>Built with Claude Code + Toss seed. Zero designer involvement.</em>
 </div>
 
-> Toss-style cards with subtle shadows, 5-level grayscale typography, big numbers with small units at 2:1 ratio, proper information pyramid, consistent 6px grid spacing. It looks like a **professional designer built it**.
+<br />
+
+Toss-style cards with subtle shadows, 5-level grayscale typography, big numbers with small units at 2:1 ratio, proper information pyramid, consistent 6px grid spacing.
 
 The difference? **2,200 lines of design rules** that teach AI how to think like a designer.
 
@@ -158,11 +156,7 @@ Result: A professionally designed, accessible, UX-optimized onboarding flow — 
 
 ## Showcase
 
-<div align="center">
-  <img src="showcase/toss-full.png" width="320" alt="Full SaaS dashboard built with Toss seed" />
-</div>
-
-> Built entirely with Claude Code + Toss seed. Zero designer involvement. The design rules handle color philosophy, typography hierarchy, spacing, card structure, and information pyramid automatically.
+> See the dashboard screenshot above — built entirely with Claude Code + Toss seed. Zero designer involvement. The design rules handle color philosophy, typography hierarchy, spacing, card structure, and information pyramid automatically.
 
 ## StyleSeed + awesome-design-md
 
