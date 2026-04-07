@@ -34,14 +34,14 @@
   --info: #3B82F6;
   --info-foreground: #ffffff;
 
-  /* === Text Hierarchy (원본 대시보드 기준) === */
+  /* === Text Hierarchy === */
   --text-primary: #3C3C3C;
   --text-secondary: #6A6A6A;
   --text-tertiary: #7A7A7A;
   --text-disabled: #9B9B9B;
   --icon-default: #4A5568;
 
-  /* === Surface Colors (원본 대시보드 기준) === */
+  /* === Surface Colors === */
   --surface-page: #FAFAFA;
   --surface-subtle: #FAFAF9;
   --surface-muted: #E8E6E1;
@@ -100,7 +100,7 @@
 }
 
 .dark {
-  /* === 배경 & 표면 (명암 차이 필수: page < card < subtle) === */
+  /* === Background & Surface (brightness order: page < card < subtle) === */
   --background: #121212;
   --foreground: #E0E0E0;
   --card: #1E1E1E;
@@ -108,21 +108,21 @@
   --popover: #252525;
   --popover-foreground: #E0E0E0;
 
-  /* === 텍스트 계층 (다크용) === */
+  /* === Text Hierarchy (dark) === */
   --text-primary: #E0E0E0;
   --text-secondary: #A0A0A0;
   --text-tertiary: #808080;
   --text-disabled: #555555;
   --icon-default: #909090;
 
-  /* === 표면 (다크용) === */
+  /* === Surface (dark) === */
   --surface-page: #121212;
   --surface-subtle: #252525;
   --surface-muted: rgba(255, 255, 255, 0.08);
   --brand-tint: rgba(155, 95, 255, 0.15);
   --alert-badge: #FF5C5C;
 
-  /* === 키컬러 & 상태 (밝게 조정) === */
+  /* === Key Color & Status (brightened for dark mode) === */
   --brand: #9B5FFF;
   --primary: #E0E0E0;
   --primary-foreground: #121212;
@@ -141,14 +141,14 @@
   --info: #64B5F6;
   --info-foreground: #121212;
 
-  /* === 보더 & 입력 === */
+  /* === Border & Input === */
   --border: rgba(255, 255, 255, 0.08);
   --input: rgba(255, 255, 255, 0.08);
   --input-background: #252525;
   --switch-background: #404040;
   --ring: #555555;
 
-  /* === 그림자 → 다크에서는 보더로 대체 === */
+  /* === Shadow → replaced by borders in dark mode === */
   --shadow-card: none;
   --shadow-button: none;
   --shadow-card-hover: none;
