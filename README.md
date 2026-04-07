@@ -44,21 +44,27 @@ The difference? A **complete design ruleset** that teaches AI how to think like 
 
 ## Get Started
 
-### Option 1: Just tell Claude Code (Easiest)
+### Option 1: Give Claude Code the URL (Easiest)
 
 ```
-"Use https://github.com/bitjaru/styleseed as the design system. Build a SaaS dashboard with revenue chart, user stats, and recent activity."
+Refer to https://github.com/bitjaru/styleseed/tree/main/seeds/toss — 
+read CLAUDE.md and DESIGN-LANGUAGE.md for the design system rules,
+then use the components in components/ and tokens in css/theme.css.
+
+Build a SaaS dashboard with revenue chart, user stats, and recent activity
+following this design system.
 ```
 
-That's it. Claude Code fetches the design rules and builds with them.
+Claude Code reads the design rules and builds with them. No setup needed.
 
 ### Option 2: Copy into your project (For ongoing use)
 
 ```bash
-cp -r seeds/toss/* your-project/
+git clone https://github.com/bitjaru/styleseed.git
+cp -r styleseed/seeds/toss/* your-project/
 ```
 
-Claude Code reads `CLAUDE.md` automatically. Every component now follows the design language — no need to mention the URL again.
+Now Claude Code reads `CLAUDE.md` automatically every time — no need to mention the URL again.
 
 ## Why StyleSeed
 

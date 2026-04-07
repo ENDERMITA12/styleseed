@@ -45,21 +45,25 @@ Claude Code한테 "대시보드 만들어줘" 하면 보통 이런 결과가 나
 
 ## 사용법
 
-### 방법 1: Claude Code한테 URL만 던지기 (가장 쉬움)
+### 방법 1: Claude Code한테 URL 주기 (가장 쉬움)
 
 ```
-"https://github.com/bitjaru/styleseed 이거 디자인 시스템으로 쓰고 SaaS 대시보드 만들어줘"
+https://github.com/bitjaru/styleseed/tree/main/seeds/toss 여기에서
+CLAUDE.md랑 DESIGN-LANGUAGE.md 읽고 디자인 시스템 규칙 파악해줘.
+components/ 컴포넌트랑 css/theme.css 토큰 사용해서
+SaaS 대시보드 만들어줘. 매출 차트, 유저 통계, 최근 활동 포함.
 ```
 
-끝. Claude Code가 알아서 디자인 규칙을 읽고 적용합니다.
+Claude Code가 디자인 규칙을 읽고 적용합니다. 설치 필요 없음.
 
 ### 방법 2: 프로젝트에 복사 (계속 쓸 때)
 
 ```bash
-cp -r seeds/toss/* your-project/
+git clone https://github.com/bitjaru/styleseed.git
+cp -r styleseed/seeds/toss/* your-project/
 ```
 
-`CLAUDE.md`를 자동으로 읽어서 모든 컴포넌트가 디자인 규칙을 따릅니다.
+`CLAUDE.md`를 자동으로 읽어서 매번 URL 안 줘도 됩니다.
 
 ## 왜 필요한가
 
