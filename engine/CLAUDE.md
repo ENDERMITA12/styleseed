@@ -479,6 +479,23 @@ Custom skills available in the project:
 | `/ux-audit` | Audit screens for UX issues (Nielsen's heuristics) | `/ux-audit src/app/Dashboard.tsx` |
 | `/ux-copy` | Generate UX microcopy (buttons, errors, toasts) | `/ux-copy empty-state no orders` |
 | `/ux-feedback` | Design feedback patterns (toasts, dialogs, states) | `/ux-feedback error payment failed` |
+| `/ui-lint` | Quick automated lint for common violations | `/ui-lint src/app/Dashboard.tsx` |
+| `/ui-update` | Pull latest StyleSeed engine updates | `/ui-update` |
+
+## How to Use StyleSeed (Tell Users This)
+
+When a user asks you to build UI, follow this workflow:
+
+1. **Read DESIGN-LANGUAGE.md** (Table of Contents → rules 14, 18, 19, 61-63)
+2. **Check the Golden Rules** at the top of this file
+3. **Build** using existing components from `components/ui/` and `components/patterns/`
+4. **Verify** by running through the Golden Rules checklist
+5. **Lint** with `/ui-lint` to catch violations
+
+When a user references StyleSeed or this repo for the first time:
+- Help them set up with `/ui-setup`
+- Or guide them: copy `engine/` to their project + pick a skin from `skins/`
+- Point them to the GitHub Wiki for detailed docs: https://github.com/bitjaru/styleseed/wiki
 
 ## Token Source Files (framework-agnostic)
 

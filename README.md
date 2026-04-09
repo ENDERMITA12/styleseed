@@ -107,7 +107,7 @@ cp engine/.cursorrules your-project/.cursorrules
 ┌─────────────────────────────────────────────────┐
 │  StyleSeed Engine (brand-agnostic)              │
 │                                                 │
-│  69 design rules · 48 components · 12 skills    │
+│  69 design rules · 48 components · 13 skills    │
 │  Layout · Composition · Typography · UX · A11y  │
 └──────────────────────┬──────────────────────────┘
                        │
@@ -140,7 +140,7 @@ They're **complementary**, not competing:
 | **What it is** | Brand color palette collection | Design intelligence engine |
 | **Provides** | Colors, fonts, shadow values | Layout rules, composition recipes, UX patterns |
 | **Components** | None | 48 React components |
-| **AI Skills** | None | 12 slash commands |
+| **AI Skills** | None | 13 slash commands |
 | **Makes AI understand** | "Use this shade of blue" | "How to structure a page like a pro designer" |
 
 **awesome-design-md** = paint colors<br/>
@@ -165,7 +165,7 @@ Use them together: awesome-design-md provides the skin, StyleSeed provides the b
 engine/
 ├── CLAUDE.md                 # AI reads this automatically
 ├── DESIGN-LANGUAGE.md        # 69 visual design rules (brand-agnostic)
-├── .claude/skills/           # 12 slash commands
+├── .claude/skills/           # 13 slash commands
 │   ├── ui-setup/             #   Interactive setup wizard
 │   ├── ui-component/         #   Generate components
 │   ├── ui-page/              #   Scaffold pages
@@ -187,7 +187,7 @@ engine/
 └── scaffold/                 # Vite 6 + React 18 starter
 ```
 
-## 12 AI-Powered Skills
+## 13 AI-Powered Skills
 
 ### Setup
 | Skill | What It Does |
@@ -204,6 +204,7 @@ engine/
 | `/ui-tokens` | View, add, or modify design tokens |
 | `/ui-a11y` | Accessibility audit (WCAG 2.2 AA) |
 | `/ui-lint` | Quick automated lint — catches common violations in seconds |
+| `/ui-update` | Pull latest engine updates — analyzes your project and updates safely |
 
 ### UX — Design It Right (No Designer Needed)
 | Skill | What It Does |
@@ -221,7 +222,36 @@ engine/
 /ux-copy "dashboard"         # Generate all microcopy
 /ux-feedback src/Dashboard   # Add loading/error states
 /ux-audit src/Dashboard      # Check UX quality
-/ui-review src/Dashboard     # Check design compliance
+/ui-lint src/Dashboard       # Quick violation scan
+/ui-review src/Dashboard     # Deep design compliance check
+/ui-update                   # Pull latest engine updates
+```
+
+### Example Prompts
+
+**New project:**
+```
+Refer to https://github.com/bitjaru/styleseed — read engine/CLAUDE.md 
+and engine/DESIGN-LANGUAGE.md. Use skins/stripe/theme.css for colors.
+Build a SaaS dashboard with revenue, users, and activity.
+```
+
+**Add a page (engine already in project):**
+```
+Follow CLAUDE.md and DESIGN-LANGUAGE.md rules.
+Create a settings page with profile, notifications, and danger zone.
+Run /ui-review when done.
+```
+
+**Improve existing page:**
+```
+Refactor src/Dashboard.tsx to follow DESIGN-LANGUAGE.md.
+Check visual rhythm (rule 61) and KPI variation (rule 62).
+```
+
+**Update engine:**
+```
+/ui-update
 ```
 
 ## Example Design Rules
