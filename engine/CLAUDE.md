@@ -3,6 +3,21 @@
 A brand-agnostic design engine that makes AI produce professional-quality UI.
 The engine provides layout rules, components, and skills. The skin provides colors and fonts.
 
+## Golden Rules (NEVER break these)
+
+```
+ 1. All content inside cards — NEVER on bare page background
+ 2. Single accent color (--brand) — everything else grayscale
+ 3. No pure black (#000) — darkest text is defined by skin (~#2A2A2A)
+ 4. Numbers 2:1 with units — 48px number + 24px unit, always
+ 5. space-y-6 between sections · mx-6 for single cards · px-6 for grids
+ 6. Never repeat same section type consecutively — create visual rhythm
+ 7. Card shadows ≤ 8% opacity — if visible, it's too strong
+ 8. Touch targets ≥ 44×44px — no tiny tap areas
+ 9. Semantic tokens only (text-brand, bg-card) — NEVER hardcode hex in components
+10. After generating ANY page → run /ui-review to verify compliance
+```
+
 Reference this guide when Claude Code sets up a new project or implements UI.
 
 > **When to read which file:**

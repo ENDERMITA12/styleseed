@@ -54,3 +54,15 @@ export default function PageName() {
 5. Compose the page from existing components (ui/ and patterns/) wherever possible.
 
 6. Safe area: include `env(safe-area-inset-*)` padding for modern devices.
+
+7. **Post-generation verification (MANDATORY):**
+   After creating the page, verify against the Golden Rules:
+   - [ ] All content is inside cards (no bare background content)
+   - [ ] Only `--brand` color used for accents (no other accent colors)
+   - [ ] No hardcoded hex values (all semantic tokens)
+   - [ ] Section types alternate (no two identical types in a row)
+   - [ ] Numbers have 2:1 ratio with units
+   - [ ] Spacing uses 6px multiples (p-1.5, p-3, p-6)
+   - [ ] `mx-6` for single cards, `px-6` for grids/carousels
+   - [ ] Touch targets ≥ 44px on all interactive elements
+   If any violation is found, fix it before presenting the page to the user.

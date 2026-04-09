@@ -107,7 +107,7 @@ cp engine/.cursorrules your-project/.cursorrules
 ┌─────────────────────────────────────────────────┐
 │  StyleSeed Engine (brand-agnostic)              │
 │                                                 │
-│  69 design rules · 48 components · 11 skills    │
+│  69 design rules · 48 components · 12 skills    │
 │  Layout · Composition · Typography · UX · A11y  │
 └──────────────────────┬──────────────────────────┘
                        │
@@ -140,7 +140,7 @@ They're **complementary**, not competing:
 | **What it is** | Brand color palette collection | Design intelligence engine |
 | **Provides** | Colors, fonts, shadow values | Layout rules, composition recipes, UX patterns |
 | **Components** | None | 48 React components |
-| **AI Skills** | None | 11 slash commands |
+| **AI Skills** | None | 12 slash commands |
 | **Makes AI understand** | "Use this shade of blue" | "How to structure a page like a pro designer" |
 
 **awesome-design-md** = paint colors<br/>
@@ -165,7 +165,7 @@ Use them together: awesome-design-md provides the skin, StyleSeed provides the b
 engine/
 ├── CLAUDE.md                 # AI reads this automatically
 ├── DESIGN-LANGUAGE.md        # 69 visual design rules (brand-agnostic)
-├── .claude/skills/           # 11 slash commands
+├── .claude/skills/           # 12 slash commands
 │   ├── ui-setup/             #   Interactive setup wizard
 │   ├── ui-component/         #   Generate components
 │   ├── ui-page/              #   Scaffold pages
@@ -187,7 +187,7 @@ engine/
 └── scaffold/                 # Vite 6 + React 18 starter
 ```
 
-## 11 AI-Powered Skills
+## 12 AI-Powered Skills
 
 ### Setup
 | Skill | What It Does |
@@ -203,6 +203,7 @@ engine/
 | `/ui-review` | Audit code for design system violations |
 | `/ui-tokens` | View, add, or modify design tokens |
 | `/ui-a11y` | Accessibility audit (WCAG 2.2 AA) |
+| `/ui-lint` | Quick automated lint — catches common violations in seconds |
 
 ### UX — Design It Right (No Designer Needed)
 | Skill | What It Does |
@@ -275,6 +276,12 @@ Better rules → better AI output:
 - New AI skills
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## Updating
+
+Already using StyleSeed? See [engine/UPDATE.md](engine/UPDATE.md) for how to pull latest rules and components.
+
+**Get notified of updates:** Click **Watch** → **Custom** → **Releases** on this repo. You'll get an email when new versions ship.
 
 ## License
 
