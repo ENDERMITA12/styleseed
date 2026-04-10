@@ -114,6 +114,28 @@ Other semantic tokens (`--background`, `--foreground`, `--muted`, etc.) typicall
 
 **Rule: NEVER pick a font size that's not in this table.** If unsure, use the closest context match.
 
+#### IMPORTANT: Font Size Anti-Pattern
+
+```
+✗ NEVER create CSS variables for font sizes (e.g., --text-sm, --fs-body)
+  → Tailwind v4 uses --text-* namespace internally. Custom --text-* variables
+    WILL conflict and break line-height, letter-spacing, and icon sizing.
+
+✗ NEVER use text-[var(--anything)] for font sizes
+  → Tailwind v4 interprets text-[var(--x)] as COLOR, not font-size!
+  → Result: `color: 13px` (invalid) instead of `font-size: 13px`
+  → Even text-[length:var(--x)] is fragile — requires 860+ replacements if wrong
+
+✗ NEVER change --font-size in theme.css
+  → All rem-based spacing (h-14, px-6, gap-3) depends on root font-size
+  → Changing it breaks icon sizes, nav text, button padding — everything
+
+✓ ALWAYS use explicit px values: text-[36px], text-[18px], text-[13px]
+  → This is intentional, not a hack. The "Font Size by Context" table above
+    IS the token system. Look up the context, use the exact class.
+  → Explicit px values are predictable, don't conflict, and never break.
+```
+
 ### Spacing
 - Uses Tailwind default utilities
 - 6px multiples recommended: `p-1.5`(6px), `p-3`(12px), `p-6`(24px)
@@ -475,10 +497,12 @@ For notch/Dynamic Island support on mobile:
 - Do not use inline hex for colors that have semantic tokens
 - Do not create wrapper components that only add className (use `cn()` at the call site)
 - Do not use `@mui/material` (use Radix UI instead)
-- Avoid px values in Tailwind (`p-6` OK, `p-[24px]` not OK)
+- Avoid px values in Tailwind for **spacing** (`p-6` OK, `p-[24px]` not OK)
+- **Font sizes: USE `text-[Npx]` directly** — do NOT create CSS variables for font sizes (`--text-sm`, `--fs-body` etc.) — they conflict with Tailwind v4's `--text-*` namespace and break line-height, icon sizing, and spacing
 - Do not omit `data-slot` attribute on new components
 - Use `size-4` instead of `w-4 h-4` (Tailwind v4 shorthand)
 - Use `ms-*` instead of `ml-*` (logical properties, RTL support)
+- Do not change `--font-size` in theme.css without checking all spacing — rem-based layouts depend on it
 
 ## UI Design Skills (Slash Commands)
 

@@ -59,7 +59,15 @@ grep -n 'data-slot' [file]       # check if present
 **Violation:** Component without `data-slot`
 **Fix:** Add `data-slot="component-name"`
 
-### 7. className Without cn()
+### 7. Font Size CSS Variables (CRITICAL — Tailwind v4 conflict)
+```bash
+grep -n 'text-\[var(--' [file]
+grep -n '\-\-text-.*px\|--fs-.*px' [file]
+```
+**Violation:** `text-[var(--text-sm)]` or `--text-sm: 13px` in theme.css
+**Fix:** Use explicit `text-[13px]`. CSS variable font sizes conflict with Tailwind v4's `--text-*` namespace — Tailwind reads them as color, not font-size.
+
+### 8. className Without cn()
 ```bash
 grep -n 'className={`' [file]
 ```

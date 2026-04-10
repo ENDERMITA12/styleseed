@@ -171,6 +171,17 @@ className="text-[12px] text-text-secondary font-medium uppercase tracking-[0.05e
 // "Today's Revenue", "Active Users", "Revenue Trend"
 ```
 
+### CRITICAL: Font Size Implementation in Tailwind v4
+```
+✓ CORRECT:  text-[36px]                        — explicit, predictable
+✗ WRONG:    text-[var(--text-sm)]               — Tailwind reads as COLOR, not font-size!
+✗ WRONG:    text-[length:var(--text-sm)]        — fragile workaround, breaks at scale
+✗ WRONG:    --text-sm: 13px in theme.css        — conflicts with Tailwind --text-* namespace
+
+Font sizes are NOT tokenized as CSS variables. Use explicit px values.
+The "Font Size by Context" table in CLAUDE.md is the canonical reference.
+```
+
 ---
 
 ## 4. Trend Indicator Rules
