@@ -4,9 +4,10 @@
 
 # styleseed
 
-### AI가 UI/UX 디자이너처럼 코딩하게 만들어주는 디자인 룰셋
+### Claude Code · Cursor · 바이브코딩을 위한 디자인 시스템
 
-**디자이너 없이, 바이브코딩만으로 프로 수준 UI를 만들 수 있습니다.**
+**AI 코딩툴이 만드는 촌스러운 UI, 이제 그만.**<br />
+Claude Code나 Cursor에 StyleSeed를 얹으면 Toss / Stripe / Linear 수준 결과물이 즉시 나옵니다. 69개 디자인 룰, 48개 shadcn 스타일 컴포넌트, Toss·Stripe·Linear·Vercel·Notion 브랜드 스킨. Tailwind CSS v4 + Radix UI 기반.
 
 <br />
 
@@ -17,6 +18,15 @@
 </div>
 
 ---
+
+## 누구를 위한 프로젝트인가?
+
+- **Claude Code**나 **Cursor**에 대시보드를 시켰는데 촌스럽게 나오신 분
+- **바이브코딩**으로 SaaS를 만드는데 디자이너를 구하기 어려우신 분
+- **shadcn/ui**를 쓰지만 결과물이 여전히 "AI가 만든 느낌"이신 분
+- **토스 스타일**의 정제된 UI를 원하지만 직접 역설계하기 힘드신 분
+- 디자인용 **Claude Code 스킬** 또는 **Cursor rules**를 만드시는 분
+- AI로 빠르게 출시하면서도 "AI로 만든 티 안 나는" UI가 필요하신 분
 
 ## 30초 설명
 
@@ -205,6 +215,36 @@ cp -r styleseed/seeds/toss/* your-project/
 | apple | Apple HIG 스타일 | — | 준비 중 |
 | linear | Linear 앱 스타일 | — | 준비 중 |
 | stripe | Stripe 대시보드 | — | 준비 중 |
+
+## StyleSeed vs 대안
+
+| | StyleSeed | shadcn/ui | Tailwind UI | Material UI | AI 기본 결과물 |
+|---|---|---|---|---|---|
+| 컴포넌트 | ✅ 48개 | ✅ 50+ | ✅ | ✅ | ❌ |
+| 디자인 **판단 기준** (언제 뭘 쓸지) | ✅ 69개 룰 | ❌ | ❌ | 일부 | ❌ |
+| Claude Code / Cursor 통합 | ✅ 11개 스킬 | ❌ | ❌ | ❌ | — |
+| 브랜드 스킨 (Toss, Stripe, Linear...) | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 가격 | 무료 (MIT) | 무료 | $299+ | 무료 | — |
+| AI 코딩툴과 *함께* 동작 | ✅ | 간접 | 간접 | 간접 | — |
+
+**요약:** shadcn/ui는 컴포넌트를 줍니다. Tailwind UI는 템플릿을 줍니다. StyleSeed는 **AI 결과물이 AI 같아 보이지 않게 만드는 디자인 판단 기준**을 줍니다.
+
+## 자주 묻는 질문
+
+**Q: Claude Code / Cursor가 왜 촌스러운 UI를 만드나요?**
+LLM은 기능적 정답을 최적화하지 시각적 세련도를 최적화하지 않습니다. `#000` 검정, `py-4` 간격, 전부 `text-xl` — 문법은 맞고 결과는 아마추어. StyleSeed는 프로 디자이너가 쓰는 기준을 LLM에게 줍니다.
+
+**Q: shadcn/ui 대체재인가요?**
+아니요. shadcn/ui 패턴 **위에** 얹는 도구입니다. 같은 Radix primitive, 같은 CVA 컨벤션을 씁니다. "shadcn/ui + 디자인 판단 + AI 툴 통합" 이라고 생각하시면 됩니다.
+
+**Q: Cursor에서도 되나요?**
+됩니다. 69개 룰이 `.cursorrules`와 `CLAUDE.md`에 들어있어서 Cursor가 자동으로 읽습니다.
+
+**Q: awesome-design-md와 뭐가 다른가요?**
+awesome-design-md는 브랜드별 DESIGN.md를 줍니다 (what). StyleSeed는 그 브랜드를 실제 동작하는 앱으로 바꾸는 엔진을 줍니다 (how). 함께 쓰면 시너지.
+
+**Q: 핀테크 아닌 앱에도 쓸 수 있나요?**
+네. 엔진은 브랜드 중립적입니다. 스킨을 고르고 브랜드 색만 바꾸면 됩니다.
 
 ## 문서
 
