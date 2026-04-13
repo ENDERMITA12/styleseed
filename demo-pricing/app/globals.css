@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* ============================================
+   StyleSeed demo — 3 skins, scoped by data-skin
+   ============================================ */
+
+/* === TOSS — clean, soft, friendly === */
+[data-skin="toss"] {
+  --background: #FAFAFA;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --muted: #ECECF0;
+  --muted-foreground: #717182;
+  --border: rgba(0, 0, 0, 0.08);
+  --brand: #3182F6;
+  --brand-foreground: #FFFFFF;
+  --brand-tint: rgba(49, 130, 246, 0.08);
+  --gradient-brand: linear-gradient(135deg, #3182F6 0%, #4A90F7 100%);
+  --text-secondary: #6A6A6A;
+  --radius: 0.875rem;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-card-hover: 0 8px 24px rgba(49,130,246,0.12), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-button: 0 1px 3px rgba(49,130,246,0.2);
+  --font-display: "Pretendard", var(--font-inter), system-ui, sans-serif;
+  --duration-normal: 200ms;
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* === RAYCAST — dark, electric, multicolor gradient === */
+[data-skin="raycast"] {
+  --background: #0A0A0A;
+  --foreground: #F5F5F5;
+  --card: #161616;
+  --card-foreground: #F5F5F5;
+  --muted: #1A1A1A;
+  --muted-foreground: #888888;
+  --border: rgba(255, 255, 255, 0.08);
+  --brand: #FF4E8B;
+  --brand-foreground: #FFFFFF;
+  --brand-tint: rgba(255, 78, 139, 0.12);
+  --gradient-brand: linear-gradient(135deg, #FF6363 0%, #FF8E3C 30%, #E84A8E 65%, #A855F7 100%);
+  --text-secondary: #B8B8B8;
+  --radius: 0.5rem;
+  --shadow-card: 0 0 0 1px rgba(255,255,255,0.05), 0 8px 24px rgba(0,0,0,0.4);
+  --shadow-card-hover: 0 0 0 1px rgba(255,78,139,0.4), 0 16px 40px rgba(232,74,142,0.25), 0 0 60px rgba(168,85,247,0.2);
+  --shadow-button: 0 0 0 1px rgba(255,255,255,0.1), 0 4px 16px rgba(255,78,139,0.35);
+  --font-display: var(--font-inter), "Inter", system-ui, sans-serif;
+  --duration-normal: 220ms;
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* === ARC — cream, rainbow, playful === */
+[data-skin="arc"] {
+  --background: #FAF8F5;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --muted: #F2EFEA;
+  --muted-foreground: #6B6B6B;
+  --border: rgba(26, 26, 26, 0.08);
+  --brand: #FF5E7E;
+  --brand-foreground: #FFFFFF;
+  --brand-tint: rgba(255, 94, 126, 0.1);
+  --gradient-brand: linear-gradient(135deg, #FF5E7E 0%, #FFB84D 30%, #4ECDC4 65%, #6C5CE7 100%);
+  --text-secondary: #4A4A4A;
+  --radius: 1.25rem;
+  --shadow-card: 0 1px 3px rgba(26,26,26,0.04), 0 4px 16px rgba(108,92,231,0.06);
+  --shadow-card-hover: 0 12px 32px rgba(108,92,231,0.18), 0 4px 12px rgba(255,94,126,0.1);
+  --shadow-button: 0 4px 12px rgba(255,94,126,0.3), 0 1px 2px rgba(26,26,26,0.06);
+  --font-display: var(--font-inter), "Inter", system-ui, sans-serif;
+  --duration-normal: 280ms;
+  --ease-spring: cubic-bezier(0.34, 1.8, 0.64, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-tint: var(--brand-tint);
+  --color-text-secondary: var(--text-secondary);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background 600ms cubic-bezier(0.4, 0, 0.2, 1), color 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-skin] {
+  font-family: var(--font-display);
+}
+
+* {
+  border-color: var(--border);
+}

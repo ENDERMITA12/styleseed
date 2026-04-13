@@ -6,8 +6,24 @@
 
 ### Claude Code · Cursor · 바이브코딩을 위한 디자인 시스템
 
+<br />
+
+<a href="https://styleseed-demo.vercel.app">
+  <img src="showcase/demo.gif" width="640" alt="StyleSeed 라이브 데모 — 같은 챗 UI가 Toss, Raycast, Arc 브랜드 스킨으로 morph" />
+</a>
+
+<br /><br />
+
+[![▶ AI 챗 데모 열기](https://img.shields.io/badge/▶_AI_Chat_Demo-Live-FF4E8B?style=for-the-badge&logoColor=white)](https://styleseed-demo.vercel.app)
+&nbsp;
+[![▶ 프라이싱 데모 열기](https://img.shields.io/badge/▶_Pricing_Demo-Live-6C5CE7?style=for-the-badge&logoColor=white)](https://styleseed-demo.vercel.app/pricing)
+
+**같은 컴포넌트. 3개 브랜드 DNA.** Toss · Raycast · Arc — 색감·라운드·모션·그림자·그라데이션이 전부 StyleSeed 토큰으로 morph. 코드 분기 없이 `data-skin` 속성 하나로.
+
+<br />
+
 **AI 코딩툴이 만드는 촌스러운 UI, 이제 그만.**<br />
-Claude Code나 Cursor에 StyleSeed를 얹으면 Toss / Stripe / Linear 수준 결과물이 즉시 나옵니다. 69개 디자인 룰, 48개 shadcn 스타일 컴포넌트, Toss·Stripe·Linear·Vercel·Notion 브랜드 스킨. Tailwind CSS v4 + Radix UI 기반.
+Claude Code나 Cursor에 StyleSeed를 얹으면 Toss / Stripe / Linear 수준 결과물이 즉시 나옵니다.
 
 <br />
 

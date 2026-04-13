@@ -6,12 +6,28 @@
 
 ### The design system for Claude Code, Cursor, and vibe coding.
 
+<br />
+
+<a href="https://styleseed-demo.vercel.app">
+  <img src="showcase/demo.gif" width="640" alt="StyleSeed live demo — same chat UI morphing across Toss, Raycast, and Arc brand skins" />
+</a>
+
+<br /><br />
+
+[![▶ Open AI Chat Demo](https://img.shields.io/badge/▶_AI_Chat_Demo-Live-FF4E8B?style=for-the-badge&logoColor=white)](https://styleseed-demo.vercel.app)
+&nbsp;
+[![▶ Open Pricing Demo](https://img.shields.io/badge/▶_Pricing_Demo-Live-6C5CE7?style=for-the-badge&logoColor=white)](https://styleseed-demo.vercel.app/pricing)
+
+**One component. Three brand DNAs.** Same chat UI morphing across Toss · Raycast · Arc — colors, radius, motion, shadows, gradients all driven by StyleSeed tokens. No rewrites. No conditional code. Just a `data-skin` attribute.
+
+<br />
+
 ![GitHub release](https://img.shields.io/github/v/release/bitjaru/styleseed?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/bitjaru/styleseed?style=flat-square)
 ![License](https://img.shields.io/github/license/bitjaru/styleseed?style=flat-square)
 
 **Stop AI coding tools from generating ugly, generic UI.**<br />
-Drop StyleSeed into Claude Code, Cursor, or any AI coding workflow and get Toss / Stripe / Linear quality output — instantly. 69 design rules, 48 shadcn-style components, brand skins for Toss · Stripe · Linear · Vercel · Notion. Built on Tailwind CSS v4 + Radix UI.
+Drop StyleSeed into Claude Code, Cursor, or any AI coding workflow and get Toss / Stripe / Linear quality output — instantly.
 
 <br />
 
