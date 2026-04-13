@@ -4,14 +4,14 @@
 
 # styleseed
 
-### Make AI code like a UI/UX designer.
+### The design system for Claude Code, Cursor, and vibe coding.
 
 ![GitHub release](https://img.shields.io/github/v/release/bitjaru/styleseed?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/bitjaru/styleseed?style=flat-square)
 ![License](https://img.shields.io/github/license/bitjaru/styleseed?style=flat-square)
 
-**A design engine that teaches Claude Code and Cursor how to think like a designer.**<br />
-Pick any brand skin. Get professional UI. No designer needed.
+**Stop AI coding tools from generating ugly, generic UI.**<br />
+Drop StyleSeed into Claude Code, Cursor, or any AI coding workflow and get Toss / Stripe / Linear quality output — instantly. 69 design rules, 48 shadcn-style components, brand skins for Toss · Stripe · Linear · Vercel · Notion. Built on Tailwind CSS v4 + Radix UI.
 
 <br />
 
@@ -22,6 +22,15 @@ Pick any brand skin. Get professional UI. No designer needed.
 </div>
 
 ---
+
+## Who is this for?
+
+- You asked **Claude Code** or **Cursor** to build a dashboard and it came out amateur-looking
+- You're **vibe coding** a SaaS app and don't want to hire a designer
+- You use **shadcn/ui** but the output still feels generic
+- You want **Toss-style** refinement without reverse-engineering it yourself
+- You're building a **Claude Code skill** or **Cursor rules** setup for design
+- You ship fast with AI and need professional UI that doesn't look AI-generated
 
 ## What is StyleSeed?
 
@@ -282,6 +291,36 @@ Rule: Information density increases as you scroll down.
 ## Tech Stack
 
 React 18 · TypeScript · Tailwind CSS v4 · Radix UI · Vite 6 · Lucide Icons · CVA
+
+## StyleSeed vs. the alternatives
+
+| | StyleSeed | shadcn/ui | Tailwind UI | Material UI | Generic AI output |
+|---|---|---|---|---|---|
+| Components | ✅ 48 | ✅ 50+ | ✅ | ✅ | ❌ |
+| Design **judgment** (when to use what) | ✅ 69 rules | ❌ | ❌ | Partial | ❌ |
+| Claude Code / Cursor integration | ✅ 11 skills | ❌ | ❌ | ❌ | — |
+| Brand skins (Toss, Stripe, Linear...) | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Price | Free (MIT) | Free | $299+ | Free | — |
+| Works *with* AI coding tools | ✅ | Indirect | Indirect | Indirect | — |
+
+**TL;DR:** shadcn/ui gives you components. Tailwind UI gives you templates. StyleSeed gives you the *design judgment* that makes AI output stop looking like AI output.
+
+## FAQ
+
+**Q: Why does Claude Code / Cursor generate ugly UI?**
+Because LLMs optimize for functional correctness, not visual refinement. They'll pick `#000` for text, `py-4` for spacing, `text-xl` for everything — all technically valid, all amateur. StyleSeed gives them the rules professional designers use.
+
+**Q: Is this a shadcn/ui replacement?**
+No — it's built *on top of* shadcn/ui patterns. StyleSeed components use the same Radix primitives and CVA conventions. Think of it as shadcn/ui + design judgment + AI-tool integration.
+
+**Q: Does it work with Cursor too?**
+Yes. The 69 design rules live in a `.cursorrules` file and `CLAUDE.md`. Cursor reads them automatically.
+
+**Q: How is this different from awesome-design-md?**
+awesome-design-md gives you brand DESIGN.md files (what). StyleSeed gives you the engine that turns any brand into a working app (how). They pair well.
+
+**Q: Can I use it for a non-fintech app?**
+Yes. The engine is brand-agnostic. Pick any skin, swap the brand color, ship.
 
 ## Documentation
 
