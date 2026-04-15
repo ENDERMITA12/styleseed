@@ -26,8 +26,8 @@
 ![GitHub stars](https://img.shields.io/github/stars/bitjaru/styleseed?style=flat-square)
 ![License](https://img.shields.io/github/license/bitjaru/styleseed?style=flat-square)
 
-**Stop AI coding tools from generating ugly, generic UI.**<br />
-Drop StyleSeed into Claude Code, Cursor, or any AI coding workflow and get Toss / Stripe / Linear quality output — instantly.
+**Other repos teach LLMs what brands look like. StyleSeed teaches LLMs how designers think.**<br />
+Data vs judgment. 69 design rules that Claude Code and Cursor read automatically — so the output stops looking generated and starts looking designed.
 
 <br />
 
@@ -48,11 +48,15 @@ Drop StyleSeed into Claude Code, Cursor, or any AI coding workflow and get Toss 
 - You're building a **Claude Code skill** or **Cursor rules** setup for design
 - You ship fast with AI and need professional UI that doesn't look AI-generated
 
-## What is StyleSeed?
+## Data vs Judgment
 
-AI coding tools generate functional UI — but it looks generic. The missing piece isn't components or color tokens. **It's design judgment.**
+Every "help LLMs design better" project solves the wrong half of the problem. They feed the model more **design data** — brand palettes, font specs, shadow tokens, component libraries. I tried that first. Dumped Toss's entire design token JSON into my prompts. The output was still generic.
 
-StyleSeed is a **design engine** — 69 visual design rules, 48 components, and 11 AI skills that teach AI how professional designers think:
+Then it hit me: **a junior designer with Toss's palette still ships ugly dashboards. A senior designer with only grayscale ships something refined.** The difference isn't what they have. It's what they know to do with it.
+
+Design data is the paint. Design judgment is knowing where to put it.
+
+StyleSeed is a **design engine** — 69 visual rules, 48 components, and 11 slash commands that teach LLMs the judgment, not just the data:
 
 ```
 "The most refined black isn't #000 — it's #2A2A2A"
@@ -60,9 +64,12 @@ StyleSeed is a **design engine** — 69 visual design rules, 48 components, and 
 "Shadows at 4% opacity. If you can see it, it's already too much."
 "Numbers and units at 2:1 ratio. 48px number, 24px unit. Always."
 "Never repeat the same section type twice. Alternate tall and compact for rhythm."
+"Card/background separation matters more than any border."
 ```
 
-The engine is **brand-agnostic** — pair it with any color skin and it works.
+Nobody writes these down. They're baked into years of experience — invisible to outsiders, invisible to LLMs. StyleSeed writes them down, organizes them into six categories (color discipline, spatial rhythm, information hierarchy, shadow/elevation, component variance, motion/feedback), and hands them to Claude as a single markdown file it reads automatically.
+
+The rules are **brand-agnostic** — they don't reference specific colors, only semantic tokens. Which means the same rulebook works whether your app looks like Toss, Vercel, or your client's weird purple brand. Swap the skin, the judgment carries over.
 
 <div align="center">
   <img src="showcase/light-hero.png" width="260" alt="Light mode" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="showcase/dark-hero.png" width="260" alt="Dark mode" />
@@ -156,22 +163,25 @@ cp engine/.cursorrules your-project/.cursorrules
 - 58+ more available from [awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
 - Or create your own (change `--brand` and you're done)
 
-### StyleSeed vs awesome-design-md
+### Data vs Judgment — how StyleSeed differs from every other "design for AI" repo
 
-They're **complementary**, not competing:
+Most projects trying to fix AI-generated UI give the model more **data**. StyleSeed gives it **judgment**. They're complementary, not competing:
 
-| | [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | StyleSeed |
+| | Data repos (e.g. [awesome-design-md](https://github.com/VoltAgent/awesome-design-md)) | StyleSeed |
 |---|---|---|
-| **What it is** | Brand color palette collection | Design intelligence engine |
-| **Provides** | Colors, fonts, shadow values | Layout rules, composition recipes, UX patterns |
+| **Approach** | Brand palette collection | Design judgment engine |
+| **Teaches the model** | What brands *look like* | How designers *think* |
+| **Provides** | Colors, fonts, shadow values | 69 rules + semantic tokens + executable skills |
+| **Example output** | "Use this shade of blue" | "The refined black isn't #000, it's #2A2A2A" |
+| **Brand-specific?** | Yes — rules are tied to one brand | No — rules reference semantic tokens, work with any skin |
 | **Components** | None | 48 React components |
-| **AI Skills** | None | 13 slash commands |
-| **Makes AI understand** | "Use this shade of blue" | "How to structure a page like a pro designer" |
+| **AI skills** | None | 11 slash commands (executable rules) |
+| **Scales with new brands** | Re-extract everything | Write one `theme.css`, reuse all rules |
 
-**awesome-design-md** = paint colors<br/>
-**StyleSeed** = architecture + interior design rules
+**Data repos** = paint colors.<br/>
+**StyleSeed** = the rulebook for where to put the paint.
 
-Use them together: awesome-design-md provides the skin, StyleSeed provides the brain.
+Use them together: data repos provide the skin, StyleSeed provides the brain.
 
 ## Available Skins
 
