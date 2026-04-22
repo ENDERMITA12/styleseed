@@ -85,6 +85,18 @@ The rules are **brand-agnostic** — they don't reference specific colors, only 
 </div>
 </details>
 
+## Works with Claude Design
+
+[Claude Design](https://claude.ai/design/) generates UI fast — but it still picks `#000` for text, reaches for six accent colors, and floats cards with no background separation. The missing piece isn't more templates. It's the 69 rules that tell the model *when* to use which pattern and *why*.
+
+**StyleSeed + Claude Design together:**
+
+1. Claude Design generates the layout and components (fast scaffolding)
+2. StyleSeed's 69 rules refine the output (design judgment layer)
+3. Brand skins make it look like your brand, not like "AI made this"
+
+Drop `DESIGN-LANGUAGE.md` into your Claude Design workflow and the same model produces noticeably more refined output — without changing a single prompt.
+
 ## Get Started
 
 ### Option 1: Interactive Setup (Recommended)
